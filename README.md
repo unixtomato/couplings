@@ -1,0 +1,3 @@
+The program tries to infer couplings from samples. It uses algorithm proposed by [Swendsen](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.52.1165). 
+
+The program `couplings.cpp` computes **operators** and **local operators** of Ising model at critical temperature (from Wolff's algorithm) and of its renormalized Hamiltonians with majority rule. The output files are stored in `plot` directory. (Warning: local operators data requires about 36GB for the default 32^2 Ising model.) The program `callen.py` computes couplings and renormalized couplings based on the (local) operators information. The couplings are displayed in standard output. The `ops.txt` file records the shape of operators used.
